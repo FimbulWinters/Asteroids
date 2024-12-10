@@ -44,7 +44,6 @@ class Player(CircleShape):
             self.shoot(dt)
 
     def shoot(self, dt):
-        print(f"cooldown: {self.timer}")
         if self.timer > 0 :
             return
         self.timer = SHOT_COOLDOWN
